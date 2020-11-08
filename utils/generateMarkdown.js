@@ -1,8 +1,15 @@
 // function to generate markdown for README
 
-function generateMText(result) {
-  //console.log(result);
-  console.log(result);
-  module.exports.test = result;
+async function generateMText(result) {
+  const readMeText = `This is the result : ${result.userName}
+  ${result.emailAddress}
+    ${result.projectDesc}
+      ${result.projectlicense}
+        ${result.dependenciesCommandLine}
+          ${result.testCommandLine}
+            ${result.repoInfo}
+              ${result.repoContribute}`;
+
+  return readMeText;
 }
-module.exports.generateMText = generateMText;
+module.exports = { generateMText };
