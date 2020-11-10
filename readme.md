@@ -1,7 +1,7 @@
-# Project Name: Node.js ReadMe Generator
+# Project Name: readme generator
 # Project Description
 
-Utilizing Node.js and the inquirer, the goal was to create a command line ReadMe Generator.  I believe is succeeded and in fact this readme was written using the application.
+Write a desc here
 
 # Table of Contents
 
@@ -25,7 +25,7 @@ npm i
 
 # Usage
 
-App works seemlessly. 
+its works!!!!!!
 
 # License
 
@@ -35,7 +35,7 @@ MIT License
 
 # Contributing
 
-Feel free to fork to your repository
+idk
 
 # Tests
 
@@ -43,6 +43,6 @@ npm test
 
 # Questions
 
-If you have any questions about the repo, open and issue or contact me directly at matthewpewewardy@gmail.com.
+If you have any questions about the repo, open and issue or contact me directly at matt@something.com.
 
 You can find more of my work at [mattyparty](https://github.com/mattyparty/).
