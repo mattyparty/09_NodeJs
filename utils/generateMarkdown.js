@@ -1,25 +1,57 @@
 // function to generate markdown for README
 
 async function generateMText(result) {
-  let readMeText = `# Project Name:${result.projectName}`;
+  let readMeText = `# Project Name: ${result.projectName}`;
   let readMeTextAdd = `
-  
-## Test read me text add
+# Project Description
 
-## Table of Contents
+${result.projectDesc}
 
-## Another Thing`;
+# Table of Contents
+
+ * [Installation](#installation)
+
+ * [Usage](#usage)
+
+ * [License](#license)
+ 
+ * [Contributing](#contributing)
+
+ * [Tests](#tests)
+
+ * [Questions](#questions)
+
+# Installation 
+
+To install nessary dependencies, run the following command:
+
+${result.dependenciesCommandLine}
+
+# Usage
+
+${result.repoInfo}
+
+# License
+
+This Product is licensed under following license('s) 
+
+${result.projectlicense}
+
+# Contributing
+
+${result.repoContribute}
+
+# Tests
+
+${result.testCommandLine}
+
+# Questions
+
+If you have any questions about the repo, open and issue or contact me directly at ${result.emailAddress}.
+
+You can find more of my work at [${result.userName}](https://github.com/${result.userName}/).`;
 
   readMeText += readMeTextAdd;
   return readMeText;
 }
 module.exports = { generateMText };
-// ${result.userName}
-//   ${result.emailAddress}
-
-//${result.projectDesc}
-// ${result.projectlicense}
-//         ${result.dependenciesCommandLine}
-//           ${result.testCommandLine}
-//             ${result.repoInfo}
-//               ${result.repoContribute}
