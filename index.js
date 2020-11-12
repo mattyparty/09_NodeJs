@@ -73,7 +73,7 @@ async function init() {
   const result = await askQuestions();
 
   const markDown = await generateMarkdown.generateMText(result);
-  writeToFile("./readme.md", markDown, "utf8");
+  writeToFile("./readmeExample.md", markDown, "utf8");
 }
 
 const askQuestions = async () => {
